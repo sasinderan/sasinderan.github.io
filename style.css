@@ -1,0 +1,388 @@
+.secondContainer{
+    background-color: #F5F7FB;
+     width: 1920px;  
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.leftmenu{
+   display: flex;
+   margin-top: 10px;
+   padding: 10px ;
+   border: none;
+}
+.align{
+   padding-left: 20px;
+   padding-right: 10px;  
+}
+.align p{
+    color: #4D4F5C;
+   font-size: 14px;
+}
+.rightmenu{
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+    margin-right: 5px;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left:40px;
+    height: 78px;
+    color: #43425D;
+    font-size: 28px;
+    align-items: center;
+    background-color:#F5F7FB;
+}
+section a{
+    font-size: 16px;
+    color:#FFFFFF;
+    background-color: #6763E3;
+    padding: 6px 6px;
+    border-radius: 6px;
+    border: lightgreen;
+
+}
+main{
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;   
+}
+.box1{
+    height: 443px;
+    width: 30.5208%;
+    /*background-color: darkorange;*/
+    background-color: #FFFFFF;
+    margin: 30px 0;
+    margin-left: 40px;
+    margin-right: 20px;
+    overflow: auto;
+}
+.box0{
+    height: 443px;
+    width: 30.5208%;
+    /*background-color: darkorange;*/
+    margin: 30px 20px;
+    overflow: auto;
+    background-color: #FFFFFF;
+   
+}
+.box2{
+    height:588px;
+    width: 30.5208%;
+    padding-bottom: 40px;
+    margin: 30px 20px;
+    margin-right: 40px;
+    background-color: #FFFFFF;
+    
+}
+.secondRow{
+    display: flex;
+    width:100%;
+    
+}
+.box3{
+    height:488px;
+    width:62.916%;
+  line-height: 20px;
+    margin-top: -140px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 54px;
+    background-color: #FFFFFF;
+    
+}
+.box4{
+    height:343px;
+    width:30.5208%;
+    background-color:#F5F6FA;
+    margin-right: 40px;
+    margin-bottom: 54px;
+    display: block;
+   
+}
+/*------FIRST CONTAINER---------*/
+.img-bell{
+    width: 16px;
+	height: 18px;
+    object-position: -200px -39px;
+    object-fit: none;
+}
+.img-search{
+    width: 17px;
+	height: 17px;
+    object-position: -171px -40px;
+    object-fit: none;
+}
+.img-menu{
+    width: 23px;
+    height: 14px;
+    object-position: -1px -42px;
+    object-fit: none;
+}
+.img-profile{
+    width: 15px;
+	height: 16px;
+    object-position: -33px -40px;
+    object-fit: none;
+    margin-right: 20px;
+   
+}
+.img-billing{
+    width: 15px;
+	height: 19px;
+    object-position: -60px -39px;
+    object-fit: none;
+    margin-right: 20px;
+}
+.img-logout{
+    width: 16px;
+	height: 16px;
+    object-position: -88px -40px;
+    object-fit: none;
+    margin-right: 20px;
+   
+}
+.img-home{
+    width: 16px;
+	height: 16px;
+    object-position: -4px -4px;
+    object-fit: none;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.img-dashboard{
+    width: 18px;
+	height: 18px;
+    object-position: -87px -3px;
+    object-fit: none;
+    margin-left: 20px;
+    margin-right: 10px;   
+}
+.img-inbox{
+    width: 18px;
+	height: 16px;
+    object-position: -143px -4px;
+    object-fit: none;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+.img-products{
+    width: 18px;
+	height: 18px;
+    object-position: -199px -3px;
+    object-fit: none;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+.img-admin{
+    width: 18px;
+	height: 18px;
+    object-position: -227px -3px;
+    object-fit: none;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+.img-baricon{
+    width: 102px;
+	height: 20px;
+    object-position: -283px -2px;
+    object-fit: none;
+    margin-top: -40px;
+}
+.img-3dots{
+    width: 4px;
+	height: 20px;
+    object-position: -150px -38px;
+    object-fit: none;
+    margin-right: 24px;
+    margin-top: 34.5px;
+    
+}
+.allignBox2{
+    text-align: center;
+    display: block;
+    margin-top: -10;
+}
+.allignBox2 h2{
+    margin-top: -40px;
+}
+/*-------outercontainer-----------*/
+.outerContainer{
+    display: flex;
+    background-color:grey;
+    width: 1920px;
+
+}
+.firstContainer{
+    width: 290px;
+    height:1203px;
+    display: none;
+    background-color: #43425D;
+}
+.changeSecondcontainer{
+    background-color: #F5F7FB;
+    width: 1630px;
+}
+.sideBar li{
+    width: 290px;
+}
+.sideBar{
+       width: 290px;
+       color:#FFFFFF;
+       font-size: 16px;    
+}
+.sideBar a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 90px;
+    text-align: left; 
+}
+.sideBar a:hover{
+   padding-top: 20px;
+   padding-bottom: 20px;
+    background-color:#12121871;
+    transition: 1s;
+}
+.logo {
+    
+    padding: 26px 20px;  
+}
+
+.dropdown{
+    padding: 20px 20px;
+    color: #4D4F5C;
+    font-size: 16px;
+}
+
+.dropdown-item{
+    line-height: 40px;
+    padding-left: 20px;
+}
+.changer{
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+}
+.miniholder{
+    display: flex;
+    justify-content: space-between;
+}
+.miniholder p{
+    margin-top: 10px;
+    margin-left:25px;
+}
+.innerc{
+    font-size: 14px;
+    color: #43425D;
+    opacity: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+.innerc p{
+    margin-left: 70px;
+}
+.outerc{
+    color: #4D4F5C;
+    font-size: 16px;
+    display: block;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+.outerc h{
+    margin-left: 15px;
+}
+.box3 h{
+    font-size: 16px;
+    color: #4D4F5C;
+   margin-top: -20px;
+}
+table{
+    background-color: #FFFFFF;
+    font-size: 14px;
+    color: #4D4F5C;
+    overflow: auto;
+}
+thead{
+    background-color: #F5F6FA;
+}
+.box3 a{
+    color: #3B86FF;
+    font-size: 14px;
+}
+.box4 h{
+    padding-left: 20px;
+    color: #4D4F5C;
+    font-size: 18px;
+}
+.box4 img{
+    overflow: auto;
+   padding-top: 70px;
+  padding-right: 60px;
+  padding-left: 55px;
+  padding-bottom: 25px;
+}
+
+/*--------media querries----*/
+@media (max-width:480px){
+    .outerContainer{
+        max-width:480px;
+        background-color:grey;
+    }
+    .secondContainer{
+        background-color: #F5F7FB;
+     max-width: 480px;
+    }
+    header p{
+        display: none;
+    }
+    .align{
+        margin-left:25px;
+
+    }
+    main{
+        display: block;
+        width: 335px;
+    }
+    .box1{
+        width:100%;
+        margin-right: auto;
+    }
+    .box2{
+        width:100%;
+        margin-right: auto;
+       
+    }
+    .box0{
+        width: 100%;
+        margin-right: auto;
+    }
+    .secondRow{
+       width:335px;
+       display: block;
+    }
+    .box3{
+        margin-top: 30px;
+        width:100%;
+        margin-right: auto;
+    }
+    .box4{
+        width:100%;
+        margin-left: auto;
+        
+    }
+}
+

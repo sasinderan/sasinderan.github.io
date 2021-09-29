@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment</title>
+  <link rel="stylesheet" href="css-reset.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!------->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="outerContainer">
+
+    <!--------First box-->
+    <div id="firstBox" class="firstContainer">
+      <div class="sideBar">
+        <img class="logo" src="images/logo.svg" alt="logo">
+        <ul>
+          <li><a href="#"><img src="icons.png" alt="home" class="img-home"> Home</a> </li>
+          <li><a href="#"><img src="icons.png" alt="dashboard" class="img-dashboard"> Dashboard</a></li>
+          <li><a href="#"><img src="icons.png" alt="inbox" class="img-inbox"> Inbox <span
+                style="font-size: 10px; background-color: red; margin-left: 6px;padding: 4px 6px;border-radius: 6px 6px;">New</span></a>
+          </li>
+          <li><a href="#"> <img src="icons.png" alt="products" class="img-products"> Products</a></li>
+          <li><a href="#"><img src="icons.png" alt="Admin" class="img-admin"> Admin</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!---------START OF SECONDARY BOX----------->
+    <div class="secondContainer">
+      <header>
+        <div class="leftmenu">
+          <a href="#" onclick="display();"><img src="icons.png" alt="menu" class="img-menu"></a>
+
+          <div class="align">
+            <img src="icons.png" alt="search" class="img-search">
+          </div>
+          <p>Search transactions, invoices or help</p>
+        </div>
+        <!--Rightmenu starts---Bell, dropdown,person------------------>
+        <div class="rightmenu">
+
+          <div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle changer" type="button" id="dropdownMenuButton2"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <a><img src="icons.png" alt="bell" class="img-bell"></a>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">
+                    <!------here1-->
+                    <div class="outerc">
+                      <img src="images/1.png" alt="first">
+                      <h>Drew James</h>
+                      <div class="innerc">
+                        <p>Assigned you on the call with Sara</p>
+                        <h6>2 min ago</h6>
+                      </div>
+                    </div>
+                  </a></li>
+
+                <li><a class="dropdown-item" href="#">
+                    <!-----here2-->
+                    <div class="outerc">
+                      <img src="images/profile-pic.png" alt="first">
+                      <h>Bavid Kames</h>
+                      <div class="innerc">
+                        <p>Marked the task New UI as done</p>
+                        <h6>5 min ago</h6>
+                      </div>
+                    </div>
+
+                  </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <!------->
+                    <div class="outerc">
+                      <img src="images/3.png" alt="first">
+                      <h>Lavid Emes</h>
+                      <div class="innerc">
+                        <p>Added a new comment on Sales task</p>
+                        <h6>10 min ago</h6>
+                      </div>
+                    </div>
+                  </a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-----Dropdown Start-->
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle changer" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              John Doe
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><img src="icons.png" alt="profile photo" class="img-profile"> My
+                  profile</a></li>
+              <li><a class="dropdown-item" href="#"><img src="icons.png" alt="billing" class="img-billing"> Billing</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="icons.png" alt="logout" class="img-logout"> Logout</a>
+              </li>
+            </ul>
+          </div>
+          <!-----Dropdown End------>
+
+          <img src="images/Avatar.png" alt="photo of a person">
+        </div>
+        <!-----------------------------Right menu ends-->
+      </header>
+      <section>
+        <p><span style="font-weight: 500; color: #43425D;font-size: 2rem;">Overview</span></p>
+        <a href="#">Add funds +</a>
+      </section>
+      <main>
+
+        <div class="box1"><canvas id="myChart" style="width:100%;height: 100%;"></canvas></div>
+
+        <div class="box0"><canvas id="myChart2" style="width:100%;height: 100%;"></canvas></div>
+
+        <div class="box2">
+          <div class="allignBox2">
+            <img src="https://cdn.mitsogo.com/mitsogo/wp-content/uploads/2021/01/26095422/life-two.jpg" alt="profile 
+        photo"> <br>
+            <h1><span style="font-size: 18px; color: #4D4F5C;">Nick Herasimenaka</span> </h1> <br>
+            <h2><span style="font-size: 14px;color: #4D4F5C;opacity: 50%;"> United States</span></h2> <br>
+            <img src="icons.png" alt="baricon" class="img-baricon">
+          </div>
+          <hr>
+          <div class="miniholder">
+            <p>Our Users</p>
+            <img src="icons.png" alt="threedots" class="img-3dots">
+          </div>
+          <br>
+          <div class="outerc">
+            <img src="images/1.png" alt="first">
+            <h>Drew James</h>
+            <div class="innerc">
+              <p>United States</p>
+              <h6>Mobile:8715674877</h6>
+            </div>
+          </div>
+          <div class="outerc">
+            <img src="images/profile-pic.png" alt="first">
+            <h>Bavid Kames</h>
+            <div class="innerc">
+              <p>United States</p>
+              <h6>Mobile:8715674877</h6>
+            </div>
+          </div>
+          <div class="outerc">
+            <img src="images/3.png" alt="first">
+            <h>Lavid Emes</h>
+            <div class="innerc">
+              <p>United States</p>
+              <h6>Mobile:8715674877</h6>
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <br>
+      <div id="secondBox" class="secondRow">
+        <div class="box3">
+          <h>Referrer</h>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Location</th>
+                <th scope="col">Views</th>
+                <th scope="col">Sales</th>
+                <th scope="col">Conversion</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">google.com</th>
+                <td>3746</td>
+                <td>752</td>
+                <td>43%</td>
+                <td>$19,291</td>
+              </tr>
+              <tr>
+                <th scope="row">facebook</th>
+                <td>8126</td>
+                <td>728</td>
+                <td>32%</td>
+                <td>$17,638</td>
+
+              </tr>
+              <tr>
+                <th scope="row">twitter</th>
+                <td colspan="2">826</td>
+                <td>28%</td>
+                <td>$16,218</td>
+              </tr>
+              <tr>
+                <th scope="row">Direct,email,IM</th>
+                <td>1173</td>
+                <td>645</td>
+                <td>24%</td>
+                <td>$14,638</td>
+
+              </tr>
+              <tr>
+                <th scope="row">linkedin.com</th>
+                <td>2739</td>
+                <td>539</td>
+                <td>20%</td>
+                <td>$12,370</td>
+
+              </tr>
+              <tr>
+                <th scope="row">instagram.com</th>
+                <td>2739</td>
+                <td>539</td>
+                <td>20%</td>
+                <td>$12,370</td>
+
+              </tr>
+            </tbody>
+          </table>
+          <a href="#">Show More</a>
+
+        </div>
+        <div class="box4">
+          <h>Product Video</h> <br>
+          <img src="images/thumbnail.png" alt="thumbnail">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <!------END OF SECONDARY BOX-->
+</body>
+
+</html>
